@@ -1,0 +1,451 @@
+.ItemDetail {
+  background-image: url("https://images.alphacoders.com/135/thumb-1920-1354451.jpeg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.507);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+  }
+
+  .content {
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .cardImg {
+        img {
+          width: 600px;
+          height: 100%;
+          z-index: 2;
+        }
+      }
+
+      .cardText {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .tegh1 {
+          background: rgb(255, 174, 0);
+          padding: 5px;
+        }
+
+        .tegp {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .line {
+            height: 2px;
+            background: rgb(255, 174, 0);
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.TodoList {
+  background-image: url("https://cdn.steamstatic.com/steamcommunity/public/images/items/976310/5e89472eafc3cca02b8e54f28c786fe247c37d29.jpg");
+  box-shadow: inset 0 0 100px #070d13, inset 0 0 200px #000822,
+    inset 0 0 100px #000000;
+  background-size: cover;
+  padding: 100px 0;
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      padding: 20px;
+      width: 220px;
+      height: 250px;
+      background: rgb(17, 33, 43);
+      transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: solid 2px rgb(0, 19, 78);
+      border-radius: 5px;
+      box-shadow: inset 0 0 100px #000000, inset 0 0 200px #000000,
+        inset 0 0 100px #000000;
+
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.2s ease;
+        transform: translateY(10px);
+      }
+
+      p {
+        color: rgb(245, 245, 220);
+        margin-top: -30px;
+      }
+    }
+
+    .card:hover {
+      border: solid 2px yellow;
+      background: rgb(255, 197, 6);
+      transition: 0.2s;
+      box-shadow: inset 0 0 100px #000000, inset 0 0 200px #000000,
+        inset 0 0 100px #000000;
+
+      img {
+        transform: scale(1.2) translateY(20px);
+      }
+
+      p {
+        margin-top: -45px;
+        transition: 0.2s;
+        color: rgb(255, 255, 255);
+        position: relative;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .ItemDetail {
+    background-image: url("https://images.alphacoders.com/135/thumb-1920-1354451.jpeg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 43, 43, 0.507);
+      backdrop-filter: blur(1px);
+      z-index: 1;
+    }
+
+    .content {
+      padding: 50px 0;
+      position: relative;
+      z-index: 2;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .cardImg {
+          img {
+            width: 600px;
+            height: 100%;
+            z-index: 2;
+          }
+        }
+
+        .cardText {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .tegh1 {
+            background: rgb(255, 174, 0);
+            padding: 5px;
+          }
+
+          .tegp {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .line {
+              height: 2px;
+              background: rgb(255, 174, 0);
+            }
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .TodoList {
+    padding: 100px 0;
+
+    .cards {
+      gap: 20px;
+
+      .card {
+        padding: 20px;
+        width: 150px;
+        height: 200px;
+
+        border: solid 2px rgb(0, 19, 78);
+
+        img {
+          width: 230px;
+          height: 230px;
+        }
+
+        p {
+          margin-top: -50px;
+          font-size: 12px;
+          color: white;
+        }
+      }
+
+      .card:hover {
+        img {
+        }
+
+        p {
+          margin-top: -65px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .ItemDetail {
+    background-image: url("https://images.alphacoders.com/135/thumb-1920-1354451.jpeg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 43, 43, 0.507);
+      backdrop-filter: blur(1px);
+      z-index: 1;
+    }
+
+    .content {
+      padding: 50px 0;
+      position: relative;
+      z-index: 2;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .cardImg {
+          img {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+          }
+        }
+
+        .cardText {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .tegh1 {
+            background: rgb(255, 174, 0);
+            padding: 5px;
+          }
+
+          .tegp {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .line {
+              height: 2px;
+              background: rgb(255, 174, 0);
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .TodoList {
+    padding: 100px 0;
+
+    .cards {
+      gap: 10px;
+
+      .card {
+        padding: 20px;
+        width: 130px;
+        height: 180px;
+
+        border: solid 2px rgb(0, 19, 78);
+
+        img {
+          width: 230px;
+          height: 230px;
+        }
+
+        p {
+          margin-top: -70px;
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0);
+        }
+      }
+
+      .card:hover {
+        img {
+        }
+
+        p {
+          margin-top: -85px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .ItemDetail {
+    background-image: url("https://images.alphacoders.com/135/thumb-1920-1354451.jpeg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 43, 43, 0.507);
+      backdrop-filter: blur(1px);
+      z-index: 1;
+    }
+
+    .content {
+      padding: 50px 0;
+      position: relative;
+      z-index: 2;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .cardImg {
+          img {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+          }
+        }
+
+        .cardText {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .tegh1 {
+            background: rgb(255, 174, 0);
+            padding: 5px;
+
+            h1 {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 13px;
+          }
+
+          .tegp {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .line {
+              height: 2px;
+              background: rgb(255, 174, 0);
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .TodoList {
+    padding: 100px 0;
+
+    .cards {
+      gap: 10px;
+
+      .card {
+        padding: 20px;
+        width: 110px;
+        height: 180px;
+
+        border: solid 2px rgb(0, 19, 78);
+
+        img {
+          width: 230px;
+          height: 230px;
+        }
+
+        p {
+          margin-top: -70px;
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0);
+        }
+      }
+
+      .card:hover {
+        img {
+        }
+
+        p {
+          margin-top: -85px;
+          color: white;
+        }
+      }
+    }
+  }
+}
