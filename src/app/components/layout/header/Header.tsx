@@ -20,19 +20,6 @@ const Header = () => {
               />
             </div>
           </Link>
-          <div className={scss.search}>
-            <input
-              placeholder="search"
-              type="text"
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button
-              onClick={() => nav.push(`/ser/${search}`)}
-              className={scss.btn}
-            >
-              search
-            </button>
-          </div>
         </div>
       </div>
     </header>
